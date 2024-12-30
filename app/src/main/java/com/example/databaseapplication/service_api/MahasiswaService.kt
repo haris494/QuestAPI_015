@@ -14,6 +14,7 @@ interface MahasiswaService {
     suspend fun deleteMahasiswa(@Path("nim") nim: String)
 }
 
+
 annotation class Path(val value: String)
 
 annotation class Body
