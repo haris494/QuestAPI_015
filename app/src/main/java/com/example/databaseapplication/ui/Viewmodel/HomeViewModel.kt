@@ -23,6 +23,7 @@ class HomeViewModel(private val repository: MahasiswaRepository) : ViewModel() {
     }
 
 
+
     fun fetchMahasiswa() {
         viewModelScope.launch {
             uiState = try {
