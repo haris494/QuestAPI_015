@@ -21,6 +21,7 @@ class MahasiswaContainer(GsonConverterFactory: Any) : AppContainer {
     }
 
 
+
     override val mahasiswaRepository: MahasiswaRepository by lazy {
         object : MahasiswaRepository {
             override suspend fun getMahasiswa() = mahasiswaService.getAllMahasiswa()
