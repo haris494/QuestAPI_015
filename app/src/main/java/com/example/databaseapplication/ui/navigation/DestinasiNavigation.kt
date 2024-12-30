@@ -6,6 +6,7 @@ interface DestinasiNavigator {
 }
 
 
+
 object DestinasiHome : DestinasiNavigator {
     override val route = "home"
 }
