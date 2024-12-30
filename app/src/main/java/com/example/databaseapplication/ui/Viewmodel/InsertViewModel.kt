@@ -37,6 +37,7 @@ class InsertViewModel(private val repository: MahasiswaRepository) : ViewModel()
 }
 
 
+
 data class InsertUiState(
     val nama: String = "",
     val nim: String = "",
