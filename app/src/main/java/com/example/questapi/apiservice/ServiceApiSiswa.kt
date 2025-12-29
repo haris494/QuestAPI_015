@@ -1,6 +1,8 @@
 package com.example.questapi.apiservice
 
+import retrofit2.http.Body
 import retrofit2.http.GET
+import retrofit2.http.POST
 import retrofit2.http.Query
 
 interface ServiceApiSiswa {
@@ -12,3 +14,8 @@ interface ServiceApiSiswa {
     suspend fun getSatuSiswa(
         @Query("id") id: Int
     ): ResponseSatuSiswa
+
+    @POST("siswa.php")
+    suspend fun postSiswa(
+        @Body data: DataSiswa
+    ): retrofit2.Response<Void>
